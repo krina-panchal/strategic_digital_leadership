@@ -49,7 +49,7 @@ df = pd.DataFrame({
 })
 
 # save to CSV
-df.to_csv("synthetic_open_banking_data_small.csv", index=False)
+df.to_csv("open_banking_data.csv", index=False)
 
 print(df.head())
 print("Saved to synthetic_open_banking_data_small.csv")
