@@ -43,3 +43,98 @@ raw_df["merchant_category"] = (
 # For example extremely large values that exceed domain expectations
 upper_amount_quantile = raw_df["amount"].quantile(0.999)
 raw_df = raw_df[raw_df["amount"].between(-upper_amount_quantile, upper_amount_quantile)]
+
+
+# 3. Derived fields at transaction level
+
+# Create debit credit indicator
+raw_df["is_credit"] = np.where(raw_df["amount"] > 0, 1, 0)
+raw_df["is_debit"] = np.where(raw_df["amount"] < 0, 1, 0)
+
+# Month key for later aggregation
+raw_df["year_month"] = raw_df["date"].dt.to_period("M").astype(str)
+
+# Days since previous transaction per business
+raw_df = raw_df.sort_values(["business_id", "date"])
+raw_df["prev_date"] = raw_df.groupby("business_id")["date"].shift(1)
+raw_df["days_since_prev_txn"] = (
+    raw_df["date"] - raw_df["prev_date"]
+).dt.days.fillna(0)
+
+
+# 4. Feature engineering at business level
+
+# Helper functions for aggregation
+
+def pct_negative_balances(series: pd.Series) -> float:
+    return np.mean(series < 0)
+
+
+def concentration_index(series: pd.Series) -> float:
+    """
+    Very simple Hirschman Herfindahl like index for payment concentration.
+    """
+    abs_vals = series.abs()
+    total = abs_vals.sum()
+    if total == 0:
+        return 0.0
+    shares = abs_vals / total
+    return np.square(shares).sum()
+
+
+# Aggregate to monthly level first
+monthly = (
+    raw_df
+    .groupby(["business_id", "year_month"])
+    .agg(
+        monthly_revenue=("amount", lambda x: x[x > 0].sum()),
+        monthly_expenses=("amount", lambda x: -x[x < 0].sum()),
+        net_cashflow=("amount", "sum"),
+        avg_balance=("balance_after_transaction", "mean"),
+        min_balance=("balance_after_transaction", "min"),
+        max_balance=("balance_after_transaction", "max"),
+        pct_negative_balance=("balance_after_transaction", pct_negative_balances),
+        payment_concentration=("amount", concentration_index),
+        avg_days_between_txn=("days_since_prev_txn", "mean"),
+        txn_count=("amount", "count"),
+    )
+    .reset_index()
+)
+
+# Now aggregate to business level features
+business_features = (
+    monthly
+    .groupby("business_id")
+    .agg(
+        avg_monthly_revenue=("monthly_revenue", "mean"),
+        avg_monthly_expenses=("monthly_expenses", "mean"),
+        avg_net_cashflow=("net_cashflow", "mean"),
+        cashflow_volatility=("net_cashflow", "std"),
+        liquidity_buffer=("avg_balance", "mean"),
+        worst_drawdown=("min_balance", "min"),
+        pct_negative_balance_mean=("pct_negative_balance", "mean"),
+        payment_concentration_mean=("payment_concentration", "mean"),
+        avg_days_between_txn=("avg_days_between_txn", "mean"),
+        avg_txn_count=("txn_count", "mean"),
+    )
+    .reset_index()
+)
+
+# Replace missing values that arise from variance computations
+business_features = business_features.fillna(0.0)
+
+# Attach risk label at business level for validation purposes
+risk_labels = (
+    raw_df[["business_id", "risk_label"]]
+    .drop_duplicates(subset="business_id")
+    .set_index("business_id")
+)
+
+business_features = (
+    business_features
+    .set_index("business_id")
+    .join(risk_labels, how="inner")
+    .reset_index()
+)
+
+business_features.head()
