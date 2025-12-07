@@ -192,3 +192,9 @@ feature_importances = pd.Series(
 
 print("Top ten features by importance")
 print(feature_importances.head(10))
+
+
+# 8. Export features for Power BI consumption
+
+# Save engineered business level dataset as CSV
+business_features.to_csv("business_features.csv", index=False)
