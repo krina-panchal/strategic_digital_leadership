@@ -165,3 +165,30 @@ y_prob = log_reg.predict_proba(X_test_scaled)[:, 1]
 print("Logistic regression validation report")
 print(classification_report(y_test, y_pred))
 print("Area under ROC curve:", roc_auc_score(y_test, y_prob))
+
+
+# 7. Random forest model for sensitivity analysis
+
+rf = RandomForestClassifier(
+    n_estimators=200,
+    max_depth=None,
+    random_state=42,
+    n_jobs=-1
+)
+
+rf.fit(X_train, y_train)
+y_pred_rf = rf.predict(X_test)
+y_prob_rf = rf.predict_proba(X_test)[:, 1]
+
+print("Random forest validation report")
+print(classification_report(y_test, y_pred_rf))
+print("Area under ROC curve:", roc_auc_score(y_test, y_prob_rf))
+
+# Simple feature importance inspection
+feature_importances = pd.Series(
+    rf.feature_importances_,
+    index=X.columns
+).sort_values(ascending=False)
+
+print("Top ten features by importance")
+print(feature_importances.head(10))
