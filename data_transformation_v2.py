@@ -162,6 +162,12 @@ for biz in missing_biz:
     ], ignore_index=True)
 
 # Save to CSV
+business_df.to_csv(r"C:\Users\kpanchal009\OneDrive - pwc\QMPLUS\Year 4\IOT653U\output.csv", index=False)
+account_df.to_csv(r"C:\Users\kpanchal009\OneDrive - pwc\QMPLUS\Year 4\IOT653U\output.csv", index=False)
+transaction_df.to_csv(r"C:\Users\kpanchal009\OneDrive - pwc\QMPLUS\Year 4\IOT653U\output.csv", index=False)
+features_df.to_csv(r"C:\Users\kpanchal009\OneDrive - pwc\QMPLUS\Year 4\IOT653U\output.csv", index=False)
+
+
 business_path = "/mnt/data/business_table.csv"
 account_path = "/mnt/data/account_table.csv"
 transaction_path = "/mnt/data/transaction_table.csv"
