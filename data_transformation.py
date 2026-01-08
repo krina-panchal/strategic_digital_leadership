@@ -12,7 +12,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 # 2. Data ingestion and initial cleaning
 
-# Read synthetic open banking style data
+# Read open banking style data
 # Expected columns:
 # business_id, account_id, date, amount, transaction_type,
 # merchant_category, balance_after_transaction, risk_label
@@ -39,7 +39,7 @@ raw_df["merchant_category"] = (
     .str.lower()
 )
 
-# Remove  erroneous transactions
+# Remove erroneous transactions
 # For example extremely large values that exceed domain expectations
 upper_amount_quantile = raw_df["amount"].quantile(0.999)
 raw_df = raw_df[raw_df["amount"].between(-upper_amount_quantile, upper_amount_quantile)]

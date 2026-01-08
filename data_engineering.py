@@ -3,7 +3,7 @@ import numpy as np
 
 np.random.seed(42)
 
-# parameters for small dataset (Option A)
+# parameters for small dataset
 n_businesses = 30
 n_accounts_per_business = 2
 n_transactions = 800
@@ -15,7 +15,7 @@ account_ids = [
 ]
 
 # generate dates over a year
-dates = pd.date_range(start="2023-01-01", end="2023-12-31", periods=n_transactions)
+dates = pd.date_range(start="2024-01-01", end="2024-12-31", periods=n_transactions)
 
 # generate transaction amounts
 amounts = np.random.normal(loc=0, scale=200, size=n_transactions).round(2)
