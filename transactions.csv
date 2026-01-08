@@ -1,0 +1,401 @@
+transaction_id,sme_id,deal_value_m,deal_type,deal_success
+1,43,126.7,Full Buyout,1
+2,97,182.3,Majority,0
+3,31,494.8,Minority,1
+4,99,343.7,Minority,1
+5,17,474.7,Minority,1
+6,83,75.6,Minority,0
+7,110,194.2,Majority,1
+8,182,279.6,Minority,1
+9,190,43.0,Minority,1
+10,32,7.1,Full Buyout,0
+11,168,336.9,Minority,1
+12,141,322.7,Full Buyout,1
+13,35,208.3,Minority,0
+14,133,247.4,Minority,0
+15,29,210.6,Full Buyout,1
+16,70,16.9,Minority,0
+17,153,171.0,Majority,0
+18,95,92.7,Majority,1
+19,22,53.7,Minority,1
+20,194,478.6,Majority,0
+21,173,301.7,Full Buyout,1
+22,69,365.7,Minority,0
+23,89,161.1,Minority,0
+24,72,199.6,Full Buyout,0
+25,129,122.3,Full Buyout,1
+26,172,53.0,Full Buyout,0
+27,87,93.6,Minority,0
+28,96,399.8,Full Buyout,1
+29,75,340.4,Full Buyout,1
+30,167,275.7,Majority,0
+31,54,240.2,Majority,1
+32,88,461.6,Minority,0
+33,157,41.0,Majority,1
+34,54,143.9,Majority,1
+35,16,178.2,Full Buyout,1
+36,99,392.3,Full Buyout,0
+37,20,496.3,Majority,0
+38,46,124.1,Majority,0
+39,195,437.8,Majority,1
+40,193,416.2,Minority,0
+41,127,116.2,Minority,1
+42,58,202.7,Minority,1
+43,181,207.8,Majority,1
+44,111,489.2,Majority,1
+45,129,94.5,Minority,1
+46,81,400.6,Minority,1
+47,194,170.4,Majority,0
+48,157,366.8,Full Buyout,1
+49,84,212.9,Minority,1
+50,70,291.3,Majority,1
+51,8,417.1,Majority,1
+52,29,403.1,Full Buyout,0
+53,112,433.9,Majority,0
+54,179,34.5,Majority,1
+55,161,347.6,Minority,0
+56,131,74.3,Minority,1
+57,188,210.8,Full Buyout,1
+58,163,276.6,Full Buyout,1
+59,197,204.4,Majority,1
+60,108,262.2,Minority,0
+61,109,498.3,Full Buyout,0
+62,20,71.9,Full Buyout,1
+63,73,339.4,Full Buyout,1
+64,167,201.0,Majority,1
+65,4,70.8,Minority,0
+66,19,83.6,Full Buyout,0
+67,102,474.9,Minority,1
+68,173,440.4,Full Buyout,1
+69,171,454.0,Full Buyout,1
+70,141,495.8,Minority,0
+71,141,108.1,Minority,1
+72,188,180.9,Minority,1
+73,185,336.3,Majority,1
+74,86,244.5,Full Buyout,0
+75,52,212.1,Majority,1
+76,111,182.1,Minority,1
+77,181,298.9,Full Buyout,1
+78,109,289.9,Majority,1
+79,86,84.9,Full Buyout,1
+80,43,238.5,Majority,1
+81,200,279.0,Minority,1
+82,200,287.3,Majority,0
+83,42,109.0,Full Buyout,0
+84,90,372.4,Full Buyout,0
+85,115,17.5,Full Buyout,1
+86,26,180.6,Full Buyout,1
+87,151,391.2,Minority,1
+88,43,284.1,Majority,0
+89,77,134.3,Minority,0
+90,156,349.0,Minority,1
+91,137,285.9,Minority,1
+92,20,399.1,Full Buyout,0
+93,184,368.8,Full Buyout,1
+94,39,307.0,Full Buyout,0
+95,179,246.6,Majority,0
+96,12,70.9,Full Buyout,1
+97,183,134.4,Majority,0
+98,11,212.5,Full Buyout,1
+99,154,301.7,Full Buyout,0
+100,42,259.3,Minority,0
+101,155,147.7,Minority,0
+102,11,8.2,Minority,1
+103,38,250.6,Majority,1
+104,98,146.4,Majority,1
+105,171,368.6,Full Buyout,0
+106,19,16.9,Majority,0
+107,192,294.5,Full Buyout,1
+108,134,471.0,Majority,1
+109,174,91.3,Majority,1
+110,116,238.5,Majority,0
+111,113,50.3,Minority,1
+112,170,314.7,Majority,1
+113,65,277.5,Minority,1
+114,99,206.6,Minority,1
+115,72,263.1,Majority,0
+116,187,448.8,Full Buyout,1
+117,52,102.2,Full Buyout,1
+118,118,16.2,Full Buyout,1
+119,175,431.5,Majority,1
+120,120,290.7,Full Buyout,1
+121,7,445.9,Minority,1
+122,11,300.5,Full Buyout,0
+123,103,406.0,Majority,0
+124,61,217.7,Full Buyout,1
+125,68,376.2,Minority,1
+126,153,457.0,Majority,1
+127,140,288.2,Full Buyout,0
+128,154,94.5,Majority,1
+129,102,138.1,Majority,1
+130,110,103.3,Majority,0
+131,140,127.2,Full Buyout,1
+132,171,156.7,Majority,0
+133,51,279.8,Full Buyout,0
+134,117,296.1,Minority,1
+135,165,216.1,Full Buyout,1
+136,46,309.6,Minority,1
+137,53,45.4,Full Buyout,1
+138,88,48.5,Majority,1
+139,121,90.1,Full Buyout,1
+140,13,261.4,Majority,1
+141,89,110.9,Minority,1
+142,125,145.2,Full Buyout,0
+143,118,203.2,Majority,1
+144,54,406.9,Minority,0
+145,185,11.9,Minority,0
+146,116,326.4,Full Buyout,1
+147,118,336.1,Minority,1
+148,4,400.3,Majority,1
+149,75,466.7,Minority,1
+150,49,15.0,Minority,1
+151,7,81.1,Majority,0
+152,110,443.7,Minority,0
+153,122,232.0,Minority,0
+154,11,284.5,Minority,1
+155,92,333.2,Minority,0
+156,182,341.1,Majority,1
+157,173,466.2,Minority,1
+158,23,498.5,Majority,0
+159,28,361.5,Minority,1
+160,111,147.2,Minority,1
+161,57,440.5,Minority,0
+162,26,29.4,Minority,1
+163,153,119.4,Majority,1
+164,54,449.2,Majority,1
+165,29,131.8,Majority,1
+166,97,114.2,Full Buyout,1
+167,164,73.4,Minority,1
+168,14,430.3,Minority,0
+169,78,252.5,Majority,1
+170,35,339.1,Full Buyout,1
+171,30,123.3,Minority,0
+172,92,380.2,Majority,1
+173,17,381.2,Minority,1
+174,195,159.7,Minority,1
+175,158,208.3,Majority,1
+176,93,108.8,Majority,1
+177,173,488.4,Minority,1
+178,79,324.6,Minority,1
+179,110,467.6,Majority,1
+180,179,155.2,Minority,1
+181,102,392.0,Minority,1
+182,106,384.1,Majority,1
+183,47,347.4,Minority,1
+184,181,483.0,Minority,1
+185,64,199.8,Full Buyout,1
+186,166,69.7,Majority,0
+187,64,337.5,Full Buyout,1
+188,87,366.0,Full Buyout,1
+189,7,289.7,Full Buyout,0
+190,22,107.4,Minority,1
+191,81,254.7,Minority,1
+192,169,159.5,Full Buyout,1
+193,74,216.6,Full Buyout,0
+194,138,324.4,Full Buyout,1
+195,185,373.9,Minority,1
+196,135,120.0,Full Buyout,0
+197,125,205.6,Full Buyout,1
+198,50,138.2,Majority,1
+199,52,103.3,Majority,0
+200,161,392.8,Minority,1
+201,1,455.1,Majority,1
+202,181,188.3,Majority,0
+203,188,376.9,Majority,0
+204,162,449.0,Minority,0
+205,4,423.8,Majority,0
+206,145,95.5,Minority,1
+207,132,478.4,Full Buyout,1
+208,171,191.5,Majority,0
+209,4,172.9,Minority,0
+210,1,35.9,Majority,0
+211,71,245.7,Full Buyout,1
+212,178,59.0,Minority,0
+213,189,128.0,Minority,1
+214,35,161.9,Minority,1
+215,8,405.4,Full Buyout,0
+216,152,438.4,Full Buyout,1
+217,36,154.7,Full Buyout,1
+218,178,430.1,Minority,1
+219,123,429.3,Full Buyout,1
+220,43,383.5,Majority,0
+221,27,77.6,Full Buyout,0
+222,32,346.7,Minority,1
+223,78,472.8,Majority,0
+224,121,342.9,Full Buyout,0
+225,146,169.2,Majority,0
+226,156,252.8,Majority,0
+227,157,324.6,Minority,1
+228,16,257.7,Majority,0
+229,99,64.4,Majority,1
+230,47,159.5,Minority,1
+231,187,402.2,Minority,1
+232,31,431.4,Minority,0
+233,4,73.0,Majority,1
+234,165,476.4,Majority,0
+235,17,167.8,Majority,1
+236,39,332.8,Minority,1
+237,48,377.2,Full Buyout,1
+238,174,406.9,Majority,1
+239,176,473.1,Full Buyout,1
+240,39,159.9,Minority,1
+241,132,430.0,Majority,1
+242,30,70.2,Full Buyout,1
+243,158,354.0,Majority,0
+244,22,372.3,Majority,1
+245,66,340.5,Majority,1
+246,108,129.9,Full Buyout,1
+247,12,437.2,Minority,1
+248,36,88.6,Majority,1
+249,18,31.5,Minority,0
+250,90,360.1,Minority,1
+251,181,240.4,Full Buyout,0
+252,199,425.3,Full Buyout,1
+253,1,194.8,Minority,0
+254,127,88.3,Majority,0
+255,186,419.0,Full Buyout,1
+256,90,276.7,Majority,1
+257,87,98.7,Majority,0
+258,90,361.6,Majority,1
+259,134,258.0,Minority,0
+260,70,304.1,Majority,0
+261,44,233.1,Minority,1
+262,200,415.2,Minority,1
+263,152,415.6,Majority,0
+264,86,356.1,Majority,0
+265,19,57.2,Majority,0
+266,101,420.2,Majority,0
+267,146,337.2,Minority,1
+268,95,350.0,Majority,1
+269,101,184.7,Majority,0
+270,30,440.2,Minority,1
+271,170,364.1,Full Buyout,1
+272,33,60.7,Full Buyout,0
+273,12,206.9,Minority,1
+274,118,443.8,Full Buyout,1
+275,94,28.4,Minority,0
+276,155,480.9,Majority,0
+277,167,341.2,Majority,1
+278,137,317.5,Full Buyout,1
+279,149,138.9,Majority,0
+280,76,128.2,Full Buyout,0
+281,29,471.3,Full Buyout,1
+282,161,152.6,Majority,1
+283,190,388.9,Majority,1
+284,117,199.6,Full Buyout,1
+285,15,73.9,Majority,0
+286,2,10.3,Minority,1
+287,180,274.4,Majority,1
+288,117,488.0,Majority,1
+289,172,187.7,Minority,0
+290,182,181.8,Majority,1
+291,18,175.3,Majority,1
+292,3,262.7,Full Buyout,1
+293,135,223.1,Majority,1
+294,171,440.6,Majority,0
+295,166,255.2,Minority,1
+296,165,256.3,Full Buyout,1
+297,186,73.5,Full Buyout,1
+298,161,491.5,Full Buyout,1
+299,108,128.7,Majority,1
+300,187,41.3,Full Buyout,1
+301,95,333.3,Minority,1
+302,122,299.7,Full Buyout,0
+303,11,210.5,Minority,1
+304,68,214.0,Full Buyout,0
+305,123,393.6,Full Buyout,1
+306,196,101.9,Minority,1
+307,113,411.0,Full Buyout,1
+308,98,326.1,Full Buyout,1
+309,93,212.4,Full Buyout,1
+310,22,231.7,Majority,0
+311,194,132.0,Minority,1
+312,172,377.3,Full Buyout,0
+313,127,258.9,Minority,0
+314,134,163.8,Minority,1
+315,170,300.0,Minority,0
+316,25,497.9,Full Buyout,0
+317,185,220.5,Full Buyout,1
+318,85,460.7,Minority,1
+319,55,175.8,Majority,1
+320,144,32.1,Minority,1
+321,95,106.1,Majority,1
+322,142,212.3,Minority,1
+323,167,113.7,Minority,0
+324,156,5.1,Minority,1
+325,179,457.9,Full Buyout,1
+326,119,422.7,Majority,1
+327,177,372.4,Majority,1
+328,9,88.1,Minority,1
+329,186,64.6,Full Buyout,0
+330,173,38.5,Full Buyout,1
+331,150,363.4,Majority,1
+332,160,464.8,Full Buyout,1
+333,197,218.1,Majority,0
+334,197,64.0,Majority,1
+335,42,258.6,Majority,1
+336,53,177.7,Full Buyout,0
+337,187,190.5,Majority,0
+338,74,312.6,Majority,1
+339,39,360.8,Minority,1
+340,122,59.7,Majority,1
+341,15,22.6,Majority,0
+342,199,497.2,Minority,1
+343,157,120.2,Minority,1
+344,123,31.6,Full Buyout,0
+345,111,99.0,Majority,1
+346,131,24.3,Full Buyout,0
+347,83,198.9,Full Buyout,0
+348,10,402.2,Minority,1
+349,92,173.9,Full Buyout,1
+350,29,224.9,Majority,0
+351,35,339.4,Minority,1
+352,6,256.9,Majority,0
+353,140,431.4,Majority,0
+354,111,433.7,Minority,0
+355,38,9.9,Majority,1
+356,77,390.1,Minority,1
+357,93,233.1,Majority,1
+358,147,494.5,Minority,1
+359,67,244.2,Full Buyout,1
+360,136,493.5,Majority,0
+361,8,378.5,Minority,1
+362,122,128.1,Majority,1
+363,84,271.5,Majority,1
+364,175,496.1,Majority,0
+365,132,429.5,Minority,1
+366,179,53.2,Full Buyout,0
+367,85,354.7,Full Buyout,1
+368,195,176.1,Full Buyout,1
+369,45,8.5,Minority,0
+370,136,204.7,Full Buyout,1
+371,87,121.2,Minority,0
+372,16,410.3,Majority,1
+373,77,172.0,Majority,1
+374,195,414.6,Full Buyout,0
+375,9,5.3,Minority,0
+376,60,157.4,Majority,1
+377,78,124.4,Minority,0
+378,77,120.6,Minority,0
+379,71,38.8,Majority,0
+380,15,97.6,Minority,1
+381,71,280.0,Majority,1
+382,102,149.2,Majority,0
+383,169,211.6,Majority,0
+384,22,191.5,Minority,0
+385,152,438.6,Majority,0
+386,113,453.1,Minority,1
+387,172,249.0,Majority,1
+388,1,168.4,Majority,0
+389,10,57.9,Full Buyout,1
+390,110,476.9,Full Buyout,1
+391,200,34.8,Full Buyout,1
+392,184,152.3,Minority,1
+393,113,152.5,Minority,1
+394,50,163.6,Majority,0
+395,12,86.3,Majority,0
+396,89,392.7,Majority,0
+397,188,65.6,Majority,0
+398,154,319.3,Minority,1
+399,112,66.3,Majority,1
+400,78,39.9,Majority,1
