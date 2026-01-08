@@ -67,7 +67,7 @@ def create_leadership_profiles():
 
 
 # -----------------------------
-# Fact Tables
+# Fact Tables - main table
 # -----------------------------
 
 def create_financials():
